@@ -80,10 +80,49 @@ main{
   min-width: 100vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 }
 .grid-item{
   border: 3px solid hsl(0, 0%, 0%);
+  padding: 10px;
+}
+.profile-pic-div{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.profile-pic-div img{
+  max-width: 100px;
+  border-radius: 100px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.about-div{
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+.projects-div{
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+#skills-div{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+.skills-div-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 3px solid hsl(0, 0%, 50%);
+  border-left: 3px solid hsl(0, 0%, 50%);
+  border-radius: 10px;
+}
+.skills-div-item:hover{
+  transform: scale(0.97);
 }
 footer{
   display: flex;
