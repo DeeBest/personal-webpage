@@ -1,9 +1,14 @@
- function showSideBar(){
-  const sideBar = document.querySelector('.sidebar');
-  sideBar.style.display = 'flex';
- }
+const toggleBtn = document.querySelector(".toggle-btn");
+const navbarLinks = document.querySelector(".navbar-links");
 
- function hideSideBar(){
-  const sideBar = document.querySelector('.sidebar');
-  sideBar.style.display = 'none';
- }
+toggleBtn.addEventListener('click', ()=> {
+  // Check the current display property of navbarLinks
+  const currentDisplay = getComputedStyle(navbarLinks).display;
+  
+  // Toggle the display property based on its current value
+  if (currentDisplay === 'none') {
+    navbarLinks.style.display = 'flex';
+  } else {
+    navbarLinks.style.display = 'none';
+  }
+});
