@@ -10,7 +10,7 @@
   <body>
     <header>
       <div id="logo-div">
-        <h1>Webs By Simphiwe</h1>
+        <h1>Webs By <span class="strong my-name">Simphiwe</span></h1>
       </div>
       <nav class="navbar">
         <a href="#" class="toggle-btn">
@@ -20,23 +20,23 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
     <main>
-      <div class="grid-item profile-pic-div">
+      <div class="grid-item profile-pic-div" id="home">
         <img src="profile-pic.jpg" alt="my picture" />
-        <h1>Welcome...</h1>
       </div>
       <div class="grid-item about-div">
-        <p>
           <h2>About</h2>
-          Hi there! I'm Simphiwe, a dedicated web developer enthusiast with a
+          <hr>
+          <p>
+          Hi there! I'm <span class="strong">Simphiwe</span>, a dedicated web developer enthusiast with a
           thirst for knowledge and a drive for excellence. As someone who
           believes in the transformative power of technology, I'm committed to
           mastering the art and science of web development.
@@ -54,8 +54,9 @@
           make a difference.
         </p>
       </div>
-      <div class="grid-item skills-container">
+      <div class="grid-item skills-container" id="skills">
         <h2>Skills</h2>
+        <hr>
         <div id="skills-div">
           <div class="skills-div-item">
             <h4>Linux</h4>
@@ -91,68 +92,106 @@
           </div>
         </div>
       </div>
-      <div class="grid-item projects-div">
+      <div class="grid-item projects-div" id="projects">
         <h2>Projects</h2>
+        <hr>
         <div class="projects-grid">
           <div class="projects-grid-item">
             <h4>Restaurant Page</h4>
             <img src="./projects-images/restaurant.png" alt="restaurant-page-image">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/restaurant-page">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/restaurant-page/">See It Live</a>
+              </button>
             </div>
           </div>
           <div class="projects-grid-item">
             <h4>Library</h4>
             <img src="./projects-images/library.png" alt="Library-image">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/library">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/library/">See It Live</a>
+              </button>
             </div>
           </div>
           <div class="projects-grid-item">
             <h4>Calculator</h4>
             <img src="./projects-images/calculator.png" alt="calculator">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/calculator">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/calculator/">See It Live</a>
+              </button>
             </div>
           </div>
           <div class="projects-grid-item">
             <h4>Etch-A-Sketch</h4>
             <img src="./projects-images/etchasketch.png" alt="Etch-A-Sketch">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/etch_a_sketch">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/etch_a_sketch/">See It Live</a>
+              </button>
             </div>
           </div>
           <div class="projects-grid-item">
             <h4>Admin Dashboard</h4>
             <img src="./projects-images/admin-dashboard.png" alt="admin-dashboard">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/admin-dashboard">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/admin-dashboard/">See It Live</a>
+              </button>
             </div>
           </div>
           <div class="projects-grid-item">
             <h4>Tic-Tac-Toe</h4>
             <img src="./projects-images/tictactoe.png" alt="Tic-Tac-Toe">
             <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">Code Review</button>
-              <button class="see-it-live-btn projects-btn">See It Live</button>
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/tic-tac-toe">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/tic-tac-toe/">See It Live</a>
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="grid-item contact-div">Contact</div>
+      <div class="grid-item contact-div" id="contact">
+        <h2>Get In Touch</h2>
+        <hr>
+        <div class="contact-icons">
+          <a href="mailto:simphiwedladla8@gmail.com">
+            <img class="contact-icon" src="./icons/gmail-icon.svg" alt="gmail-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/dladla-simphiwe-89061a20a/">
+            <img class="contact-icon" src="./icons/linkedin-ar21.svg" alt="linkedin-icon">
+          </a>
+          <a href="https://github.com/DeeBest">
+            <img class="contact-icon" src="./icons/icons8-github.svg" alt="github-icon">
+          </a>
+        </div>
+      </div>
     </main>
     <footer>
       <p>
-        Created by Simphiwe&copy;
+        Created by &copy;Simphiwe
         <script>
           document.write(new Date().getFullYear());
-        </script>
-        .
+        </script>.
       </p>
     </footer>
   </body>
