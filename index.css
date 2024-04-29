@@ -20,6 +20,12 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  position: relative;
+}
+header,
+main,
+footer {
+  width: 100%;
 }
 hr {
   width: 100%;
@@ -71,7 +77,6 @@ header {
   border-bottom: 2px solid hsl(0, 0%, 50%);
   padding: 20px;
   gap: 25px;
-  min-width: 100%;
   position: fixed;
   top: 0;
   z-index: 100;
@@ -79,6 +84,7 @@ header {
   color: hsl(0, 0%, 100%);
   opacity: 0.8;
   animation: slideInFromTop 1s ease-in;
+  overflow: hidden;
 }
 header #logo-div {
   flex: 2;
@@ -121,6 +127,8 @@ header nav ul {
 header nav ul li a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
+  transition: color 0.5s ease-in-out, border-bottom 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
 }
 header nav ul li a:hover {
   color: hsl(0, 0%, 70%);
@@ -135,7 +143,6 @@ main {
   border-right: 4px solid hsl(0, 0%, 50%);
   border-radius: 20px;
   padding: 10px;
-  min-width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
@@ -220,6 +227,7 @@ main {
   overflow: hidden;
   text-align: center;
   padding: 5px;
+  transition: transform 0.5s ease-in-out;
 }
 .skills-div-item:hover {
   transform: scale(0.97);
@@ -229,7 +237,7 @@ main {
 }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
   overflow: hidden;
   padding: 10px;
@@ -251,10 +259,12 @@ main {
 .projects-grid-item img {
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 .projects-grid-item img:hover {
   transform: scale(0.97);
+  box-shadow: none;
 }
 .projects-btns-div {
   min-width: 100%;
@@ -314,6 +324,9 @@ main {
   padding: 5px;
   border-radius: 10px;
 }
+.contact-icon {
+  transition: transform 0.5s ease-in-out;
+}
 .contact-icon:hover {
   transform: scale(0.96);
 }
@@ -326,7 +339,6 @@ footer {
   padding: 20px;
   font-size: 1.5rem;
   font-weight: 550;
-  min-width: 100%;
   text-align: center;
   animation: slideInFromBottom 1s ease-in;
 }
