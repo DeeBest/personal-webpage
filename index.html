@@ -6,177 +6,175 @@
     <link rel="shortcut icon" href="favicon-icon.webp" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
-    <title>WebsBySimphiwe</title>
+    <title>Simphiwe Dladla</title>
   </head>
   <body>
     <header>
       <div id="logo-div">
-        <h1>Webs By <span class="strong my-name">Simphiwe</span></h1>
+        <div class="logo-img-container">
+          <img src="profile-pic.jpg" alt="my picture" />
+        </div>
+        <h1><span class="gradient-text my-name">Simphiwe</span></h1>
       </div>
+      <section class="dark-mode-container">
+        <input type="checkbox" name="dark-mode" id="dark-mode-input" />
+        <label for="dark-mode-input" id="dark-mode-label">
+          <div id="circle"></div>
+        </label>
+      </section>
       <nav class="navbar">
         <a href="#" class="toggle-btn">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+
+        <ul class="navbar-links desktop-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="navbar-links mobile-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div class="grid-item profile-pic-div" id="home">
-        <div>
-          <h4>...Web</h4>
+      <div id="home" class="hero">
+        <div class="about-div">
+          <!-- class="grid-item about-div" -->
+          <h2>Hi, I'm Simphiwe.</h2>
+          <hr />
+          <h1 class="gradient-text">A Web Developer</h1>
+          <p>
+            I work with HTML, CSS, JavaScript, React, Node, Webpack, GIT,
+            Github, Jest, Linux and NPM, I have built and deployed multiple
+            projects, this is one of them.
+          </p>
+          <button class="hero-btn"><a href="#contact">Contact</a></button>
         </div>
-        <img src="profile-pic.jpg" alt="my picture" />
-        <div>
-          <h4>Dev...</h4>
+        <div class="hero-contact-icons-div">
+          <div class="hero-img-div">
+            <!-- class="grid-item profile-pic-div" id="home" -->
+            <img src="profile-pic.jpg" alt="my picture" />
+          </div>
+          <div class="contact-icons">
+            <a href="mailto:simphiwedladla8@gmail.com">
+              <img
+                class="contact-icon"
+                src="./icons/contact-icons/gmail.png"
+                alt="gmail-icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/dladla-simphiwe-89061a20a/">
+              <img
+                class="contact-icon"
+                src="./icons/contact-icons/linkedin.png"
+                alt="linkedin-icon"
+              />
+            </a>
+            <a href="https://github.com/DeeBest">
+              <img
+                class="contact-icon"
+                src="./icons/contact-icons/github.webp"
+                alt="github-icon"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="grid-item about-div">
-        <h2>About</h2>
-        <hr />
-        <p>
-          Hi there! I'm <span class="strong">Simphiwe</span>, a dedicated web
-          developer enthusiast with a thirst for knowledge and a drive for
-          excellence. As someone who believes in the transformative power of
-          technology, I'm committed to mastering the art and science of web
-          development.
-        </p>
-        <br />
-        <p>
-          From crafting pixel-perfect designs to optimizing performance and
-          accessibility, I'm passionate about every aspect of the web
-          development process.
-        </p>
-        <br />
-        <p>
-          Through continuous learning and hands-on experience, I'm ready to
-          tackle new challenges and create meaningful digital solutions that
-          make a difference.
-        </p>
       </div>
       <div class="grid-item skills-container" id="skills">
         <h2>Skills</h2>
+        <p>
+          Below are some of the tools and skill sets that I currently possess in
+          my arsenal and I am still working on acquiring more, the journey is
+          just beginning.
+        </p>
         <hr />
         <div id="skills-div">
           <div class="skills-div-item">
             <h4>Linux</h4>
-            <img src="icons/linux-icon.svg" alt="linux-icon" />
+            <div class="skills-img-container">
+              <img src="icons/linux-icon.svg" alt="linux-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>Git</h4>
-            <img src="./icons/git-scm-icon.svg" alt="git-scm-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/git-scm-icon.svg" alt="git-scm-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>Github</h4>
-            <img src="./icons/icons8-github.svg" alt="icons8-github" />
+            <div class="skills-img-container">
+              <img src="./icons/icons8-github.svg" alt="icons8-github" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>HTML5</h4>
-            <img src="./icons/w3_html5-ar21.svg" alt="HTML5" />
+            <div class="skills-img-container">
+              <img src="./icons/w3_html5-ar21.svg" alt="HTML5" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>CSS3</h4>
-            <img src="./icons/w3_css-ar21.svg" alt="w3_css-ar21" />
+            <div class="skills-img-container">
+              <img src="./icons/w3_css-ar21.svg" alt="w3_css-ar21" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>JavaScript</h4>
-            <img src="./icons/icons8-javascript.svg" alt="JavaScript-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/icons8-javascript.svg" alt="JavaScript-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>NPM</h4>
-            <img src="./icons/icons8-npm.svg" alt="npm-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/icons8-npm.svg" alt="npm-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>Webpack</h4>
-            <img src="./icons/js_webpack-ar21.svg" alt="Webpack-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/js_webpack-ar21.svg" alt="Webpack-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>Jest</h4>
-            <img src="./icons/jest-js-icon.png" alt="Jest-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/jest-js-icon.png" alt="Jest-icon" />
+            </div>
           </div>
           <div class="skills-div-item">
             <h4>React</h4>
-            <img src="./icons/react-js-icon.png" alt="react-icon" />
+            <div class="skills-img-container">
+              <img src="./icons/react-js-icon.png" alt="react-icon" />
+            </div>
           </div>
         </div>
       </div>
       <div class="grid-item projects-div" id="projects">
         <h2>Projects</h2>
+        <p>
+          Below are some of the projects that I worked on, there's a button to
+          view the github repository for each project and another button to view
+          the live project.
+        </p>
         <hr />
         <div class="projects-grid">
-          <div class="projects-grid-item slide-from-left">
-            <h4>Restaurant Page</h4>
-            <img
-              src="./projects-images/restaurant.jpg"
-              alt="restaurant-page-image"
-            />
-            <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">
-                <a href="https://github.com/DeeBest/restaurant-page"
-                  >Code Review</a
-                >
-              </button>
-              <button class="see-it-live-btn projects-btn">
-                <a href="https://deebest.github.io/restaurant-page/"
-                  >See It Live</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="projects-grid-item slide-from-right">
-            <h4>Library</h4>
-            <img src="./projects-images/library.png" alt="Library-image" />
-            <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">
-                <a href="https://github.com/DeeBest/library">Code Review</a>
-              </button>
-              <button class="see-it-live-btn projects-btn">
-                <a href="https://deebest.github.io/library/">See It Live</a>
-              </button>
-            </div>
-          </div>
-          <div class="projects-grid-item slide-from-left">
-            <h4>Calculator</h4>
-            <img src="./projects-images/calculator.png" alt="calculator" />
-            <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">
-                <a href="https://github.com/DeeBest/calculator">Code Review</a>
-              </button>
-              <button class="see-it-live-btn projects-btn">
-                <a href="https://deebest.github.io/calculator/">See It Live</a>
-              </button>
-            </div>
-          </div>
-          <div class="projects-grid-item slide-from-right">
-            <h4>Etch-A-Sketch</h4>
-            <img src="./projects-images/etchasketch.png" alt="Etch-A-Sketch" />
-            <div class="projects-btns-div">
-              <button class="code-review-btn projects-btn">
-                <a href="https://github.com/DeeBest/etch_a_sketch"
-                  >Code Review</a
-                >
-              </button>
-              <button class="see-it-live-btn projects-btn">
-                <a href="https://deebest.github.io/etch_a_sketch/"
-                  >See It Live</a
-                >
-              </button>
-            </div>
-          </div>
-          <div class="projects-grid-item slide-from-left">
+          <div class="projects-grid-item">
             <h4>Shopping Cart</h4>
-            <img
-              src="./projects-images/shopping-cart.jpg"
-              alt="shopping-cart"
-            />
+            <div class="project-img-container">
+              <img
+                src="./projects-images/shopping-cart.jpg"
+                alt="shopping-cart"
+              />
+            </div>
             <div class="projects-btns-div">
               <button class="code-review-btn projects-btn">
                 <a href="https://github.com/DeeBest/shopping-cart"
@@ -190,9 +188,114 @@
               </button>
             </div>
           </div>
-          <div class="projects-grid-item slide-from-right">
+          <div class="projects-grid-item">
+            <h4>CV Builder</h4>
+            <div class="project-img-container">
+              <img src="./projects-images/cv-builder.png" alt="cv builder" />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/cv-builder">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/cv-builder/">See It Live</a>
+              </button>
+            </div>
+          </div>
+          <div class="projects-grid-item">
+            <h4>Memory Game</h4>
+            <div class="project-img-container">
+              <img
+                src="./projects-images/memory-game.jpg"
+                alt="shopping-cart"
+              />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/memory-game">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/memory-game/">See It Live</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="projects-grid-item">
+            <h4>Restaurant Page</h4>
+            <div class="project-img-container">
+              <img
+                src="./projects-images/restaurant.jpg"
+                alt="restaurant-page-image"
+              />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/restaurant-page"
+                  >Code Review</a
+                >
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/restaurant-page/"
+                  >See It Live</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="projects-grid-item">
+            <h4>Library</h4>
+            <div class="project-img-container">
+              <img src="./projects-images/library.png" alt="Library-image" />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/library">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/library/">See It Live</a>
+              </button>
+            </div>
+          </div>
+          <div class="projects-grid-item">
+            <h4>Calculator</h4>
+            <div class="project-img-container">
+              <img src="./projects-images/calculator.png" alt="calculator" />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/calculator">Code Review</a>
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/calculator/">See It Live</a>
+              </button>
+            </div>
+          </div>
+          <div class="projects-grid-item">
+            <h4>Etch-A-Sketch</h4>
+            <div class="project-img-container">
+              <img
+                src="./projects-images/etchasketch.png"
+                alt="Etch-A-Sketch"
+              />
+            </div>
+            <div class="projects-btns-div">
+              <button class="code-review-btn projects-btn">
+                <a href="https://github.com/DeeBest/etch_a_sketch"
+                  >Code Review</a
+                >
+              </button>
+              <button class="see-it-live-btn projects-btn">
+                <a href="https://deebest.github.io/etch_a_sketch/"
+                  >See It Live</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="projects-grid-item">
             <h4>Tic-Tac-Toe</h4>
-            <img src="./projects-images/tictactoe.png" alt="Tic-Tac-Toe" />
+            <div class="project-img-container">
+              <img src="./projects-images/tictactoe.png" alt="Tic-Tac-Toe" />
+            </div>
             <div class="projects-btns-div">
               <button class="code-review-btn projects-btn">
                 <a href="https://github.com/DeeBest/tic-tac-toe">Code Review</a>
@@ -206,26 +309,30 @@
       </div>
       <div class="grid-item contact-div" id="contact">
         <h2>Get In Touch</h2>
+        <p>
+          Don't be a stranger, get in touch with me below. Looking forward
+          hearing from you.
+        </p>
         <hr />
         <div class="contact-icons">
           <a href="mailto:simphiwedladla8@gmail.com">
             <img
               class="contact-icon"
-              src="./icons/gmail-icon.svg"
+              src="./icons/contact-icons/gmail.png"
               alt="gmail-icon"
             />
           </a>
           <a href="https://www.linkedin.com/in/dladla-simphiwe-89061a20a/">
             <img
               class="contact-icon"
-              src="./icons/linkedin-ar21.svg"
+              src="./icons/contact-icons/linkedin.png"
               alt="linkedin-icon"
             />
           </a>
           <a href="https://github.com/DeeBest">
             <img
               class="contact-icon"
-              src="./icons/icons8-github.svg"
+              src="./icons/contact-icons/github.webp"
               alt="github-icon"
             />
           </a>
