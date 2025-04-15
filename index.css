@@ -7,7 +7,7 @@
   font-family: 'Playfair Display', 'Times New Roman', Times, serif;
 }
 html {
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   font-size: 1rem;
 }
 body {
@@ -134,6 +134,14 @@ header nav ul li a:hover {
 }
 header nav ul li a:active {
   color: hsl(0, 0%, 0%);
+}
+.resume-btn {
+  background-color: transparent;
+  padding: none;
+  box-shadow: none;
+  color: tomato;
+  font-size: 1.2rem;
+  text-decoration: underline;
 }
 main {
   flex: 1;
